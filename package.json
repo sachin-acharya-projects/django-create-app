@@ -1,0 +1,9 @@
+{
+    "name": "django-create-app",
+    "scripts": {
+        "build": "python ./setup.py sdist bdist_wheel",
+        "upload:test": "twine upload --repository testpypi dist/*",
+        "upload": "twine upload dist/*",
+        "clean": "python setup.py clean --all"
+    }
+}
